@@ -1,1 +1,1 @@
-!(/image.png )
+!(https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2020/2/d416199ca6ecdbd0f8a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20250106%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250106T142651Z&X-Amz-Expires=345600&X-Amz-SignedHeaders=host&X-Amz-Signature=24eb5d1bc59b2d9d8a0ead382de5f8bc816a7c45c23588c39859d3558eae2071)
