@@ -1,0 +1,25 @@
+  h2 {
+    text-align: center;
+  }
+   h2 a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(143, 6, 6);
+    font-weight: bold;
+  }
+  
+  h2 a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:rgb(143, 6, 6);
+    transition: width 0.4s ease;
+  }
+  
+  h2 a:hover::after {
+    width: 100%; 
+  }
+  
