@@ -1,0 +1,76 @@
+
+/* Basic setup */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the toggle switch */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border: 2px solid rgba(128, 126, 126, 0.829);
+    border-radius: 20px;
+
+}
+
+/* Checkbox input, hidden from view */
+.toggle-cb {
+    display: none;
+}
+
+/* Label for the toggle switch */
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    background: #ccc;
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: background 0.2s;
+}
+
+/* Inner part of the toggle (background) */
+
+
+/* Switch part that slides */
+.toggle-switch {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: 2px solid rgba(128, 126, 126, 0.829);
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+/* Change the background color and position when the checkbox is checked */
+.toggle-cb:checked + .toggle-label{
+    background: rgb(249, 46, 46); /* Green when checked */
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+    transform: translate(60px, 0); /* Move the switch to the right when checked */
+}
+
+.toggle-cb:checked + .toggle-label::after {
+    content: "Yes";
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color: #FFFFFF;
+}
+
+.toggle-cb + .toggle-label::after {
+    content: "No";
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #FFFFFF;
+}
